@@ -10,6 +10,7 @@ export interface IWebApi extends ComponentFramework.WebApi {
     ): Promise<Response>;
     disassociateRecord(parentSetName: string, parentId: string, relationshipName: string, childId: string): Promise<Response>;
     retrieveRecordsByView(entityType: string, viewId: string): Promise<Response>;
+    fetchRecords(entityType: string, filter: string): Promise<Response>;
 }
 
 export class WebApi implements IWebApi {
@@ -122,6 +123,20 @@ export class WebApi implements IWebApi {
         maxPageSize?: number | undefined
     ): Promise<ComponentFramework.WebApi.RetrieveMultipleResponse> {
         return this.webApi.retrieveMultipleRecords(entityType, options, maxPageSize);
+    }
+
+    /**
+     * Retrieves a collection of entity records using fetch.
+     *
+     * @param entityType logical name of the entity type record to retrieve
+     * @param queryString queryString content for api query.
+     * @returns The deferred object for the result of the operation. A JSON object with the retrieved properties and values will be resolved if successful.
+     */
+    fetchRecords(entityType: string, queryString: string): Promise<Response> {
+        return window.fetch(`${this.clientUrl}/${WebApi.API_RELATIVEPREFIX}/${entityType}?${queryString}`, {
+            method: "GET",
+            headers: WebApi.API_HEADERS
+        });
     }
 
     /**
