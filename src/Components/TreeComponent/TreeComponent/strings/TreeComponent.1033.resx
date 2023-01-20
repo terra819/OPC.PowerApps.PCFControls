@@ -136,7 +136,7 @@
     <value>The logical name of the lookup field on the child that looks up to the parent of the entity</value>
     <comment>Description text for tree entity parent attribute logical name</comment>
   </data>
-  <data name="treeEntityName_Display_Key" xml:space="preserve">
+  <data name="treeEntityCollectionName_Display_Key" xml:space="preserve">
     <value>Tree Entity Name</value>
     <comment>Display text for the name of the tree entity</comment>
   </data>
@@ -185,7 +185,7 @@
     <comment>Description text for the Max Name Display Length</comment>
   </data>
   <data name="idAttribute_Display_Key" xml:space="preserve">
-    <value>Tree Entity Id attribute</value>
+     <value>Tree Entity Id attribute</value>
     <comment>Display text for Tree Entity Id</comment>
   </data>
   <data name="idAttribute_Desc_Key" xml:space="preserve">
