@@ -13,16 +13,16 @@
     <Managed>2</Managed>
     <Publisher>
       <!-- Unique Publisher Name of Cds Solution -->
-      <UniqueName>officeoftheprivacycommissioner</UniqueName>
+      <UniqueName>fluke</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
-        <LocalizedName description="Office of the Privacy Commissioner" languagecode="1033" />
+        <LocalizedName description="Fluke" languagecode="1033" />
       </LocalizedNames>
       <Descriptions />
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <!-- Customization Prefix for the Cds Publisher-->
-      <CustomizationPrefix>opc</CustomizationPrefix>
+      <CustomizationPrefix>flk</CustomizationPrefix>
       <!-- Derived Option Value Prefix for the Customization Prefix of Cds Publisher -->
       <CustomizationOptionValuePrefix>53395</CustomizationOptionValuePrefix>
       <Addresses>
