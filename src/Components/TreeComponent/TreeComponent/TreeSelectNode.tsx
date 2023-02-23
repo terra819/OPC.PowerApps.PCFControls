@@ -13,4 +13,5 @@ export class TreeSelectNode {
     checkable: boolean;
     parentKey: string;
     titleDetails: string;
+    level: number;
 }

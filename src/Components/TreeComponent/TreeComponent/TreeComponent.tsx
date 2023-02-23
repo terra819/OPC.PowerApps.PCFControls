@@ -67,7 +67,7 @@ export class TreeComponent extends React.Component<ITreeSelectProps, ITreeSelect
                 showCheckedStrategy={SHOW_CHILD}
                 placeholder={this.props.selectLabelText}
                 filterTreeNode={this.filter}
-                treeDefaultExpandAll={true}
+                treeDefaultExpandAll={false}
                 treeNodeLabelProp="inputTitle"
                 style={{
                     width: "100%"

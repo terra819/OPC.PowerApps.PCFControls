@@ -154,6 +154,7 @@ export abstract class TreeBaseComponent<TInputs, TOutputs> implements ComponentF
             const rootNode = new TreeSelectNode();
             rootNode.key = "";
             rootNode.children = [];
+            rootNode.level = 0;
 
             this.buildTreeData(sortedEntites, rootNode);
             this.props.treeData = rootNode.children;
@@ -181,13 +182,14 @@ export abstract class TreeBaseComponent<TInputs, TOutputs> implements ComponentF
                     const newNode = new TreeSelectNode();
                     newNode.key = newNode.value = entity[this.idAttribute];
                     newNode.parentKey = entity[this.treeEntityAttribute];
+                    newNode.level = treeRoot.level + 1;
                     newNode.children = [];
 
                     newNode.description = entity[this.descriptionAttribute];
                     newNode.name = entity[this.nameAttribute];
                     newNode.titleDetails = entity[this.extraTitleDetailsAttribute];
 
-                    newNode.checkable = this.isCheckableAttribute ? entity[this.isCheckableAttribute] : true;
+                    newNode.checkable = newNode.level > 2 && this.isCheckableAttribute ? entity[this.isCheckableAttribute] : true;
 
                     if (newNode.titleDetails) {
                         newNode.title = (
