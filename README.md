@@ -69,49 +69,6 @@ Run the following command from the `Solution` folder in order to build the solut
 ```
 msbuild /p:Configuration=Release /restore
 ```
-
-## Tag Picker Component
-
-[![dependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/status.svg?path=src/Components/TagPickerComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TagPickerComponent) [![devDependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/dev-status.svg?path=src/Components/TagPickerComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TagPickerComponent&type=dev)
-
-### Preview
-
-![TagPickerComponent Preview](img/tagpickercomponent.gif?raw=true)
-
-### Purpose
-
-The purpose of this control is to allow user to associate / disassociate records for a many-to-many relationship in the form of tags. This also works when creating an entity for the first time.
-
-### Configuration
-
-|Parameter|Description|Required|Bound to an attribute|
-|---------|-----------|:----:|:---:|
-|**Tag Data**|Stores the temporary values required for the creation of the related entities|X|X|
-|**Related Entity**|Logical name of the related entity|X||
-|**Relationship Name**|Relationship name between the primary entity and the related entity|X||
-|**Relationship Entity**|Logical name of the relationship entity|X||
-|**View ID**|View ID used to add filtering/rules when seacrhing for tags|||
-
-## Tag Picker Grid Component
-
-[![dependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/status.svg?path=src/Components/TagPickerGridComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TagPickerGridComponent) [![devDependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/dev-status.svg?path=src/Components/TagPickerGridComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TagPickerGridComponent&type=dev)
-
-### Preview
-
-![TagPickerGridComponent Preview](img/tagpickergridcomponent.gif?raw=true)
-
-The purpose of this control is to allow user to associate / disassociate records for a many-to-many relationship in the form of tags.
-
-### Configuration
-
-|Parameter|Description|Required|Bound to an attribute|
-|---------|-----------|:----:|:---:|
-|**Related Entity**|Logical name of the related entity|X||
-|**Relationship Name**|Relationship name between the primary entity and the related entity|X||
-|**Relationship Entity**|Logical name of the relationship entity|X||
-|**Label Text**|Field label that will be displayed on the form. It currently accepts the following formats: `Label` or `en=Label\|fr=Étiquette`|X||
-|**View ID**|View ID used to add filtering/rules when seacrhing for tags|||
-
 ## Tree Component
 
 [![dependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/status.svg?path=src/Components/TreeComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TreeComponent) [![devDependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/dev-status.svg?path=src/Components/TreeComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TreeComponent&type=dev)
@@ -136,25 +93,6 @@ The purpose of this control is to allow user to associate / disassociate hierarc
 |**Extra Title Details Attribute**|The attribute of the tree entity that will add extra details to the display text of the node in the tree |||
 |**Is Checkable Attribute**|The checkable attribute of the tree entity, determines whether a node can be checked in the tree  |||
 |**Max Name Display Length (Work in Progress)**|The max amount of characters the text of the node will be displayed in the tree |||
-
-## Task Manager Component
-
-[![dependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/status.svg?path=src/Components/TaskManagerComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TaskManagerComponent) [![devDependencies Status](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls/dev-status.svg?path=src/Components/TaskManagerComponent)](https://david-dm.org/opc-cpvp/OPC.PowerApps.PCFControls?path=src/Components/TaskManagerComponent&type=dev)
-
-### Preview
-
-![TaskManagerComponent Preview](img/taskmanagercomponent.gif?raw=true)
-
-The purpose of this control is provide a better user experience to manage tasks associated to a given entity.
-
-### Configuration
-
-|Parameter|Description|Required|Bound to an attribute|
-|---------|-----------|:----:|:---:|
-|**View**|View used for the list of tasks. The following mandatory fields must be included in the view; *statecode, statuscode, subject, description*.|||
-|**Badge Configuration**|Configuration of colored badges in JSON in following format: `[ { "name": "*optionset_field1*", "keys": [ 5, 6 ] }, { "name": "*optionset_field2*", "keys": [1,2,3,4] } ]`. Code will lookup the optionset metadata for colors and translations|||
-|**Panel Title**|Title that will appear above the tasks list in following format: `en=Label\|fr=Étiquette`|X||
-
 
 ## Versioning
 
