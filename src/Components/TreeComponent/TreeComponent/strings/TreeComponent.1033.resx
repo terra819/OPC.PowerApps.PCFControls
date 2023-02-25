@@ -168,14 +168,6 @@
     <value>The logical name of the Extra Title Details attribute for the tree entity</value>
     <comment>Description text for Extra Title Details Attribute</comment>
   </data>
-  <data name="isCheckableAttribute_Display_Key" xml:space="preserve">
-    <value>Tree Entity Is Checkable attribute</value>
-    <comment>Display text for the Is Checkable attribute</comment>
-  </data>
-  <data name="isCheckableAttribute_Desc_Key" xml:space="preserve">
-    <value>The logical name of the Is Checkable attribute for the tree entity</value>
-    <comment>Description text for the Is Checkable Attribute</comment>
-  </data>
   <data name="maxNameDisplayLength_Display_Key" xml:space="preserve">
     <value>Tree Max Name Display Length</value>
     <comment>Display text for the Max Name Display Length</comment>

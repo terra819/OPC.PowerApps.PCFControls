@@ -91,7 +91,6 @@ The purpose of this control is to allow user to associate / disassociate hierarc
 |**Relationship Entity**|Logical name of the relationship entity|X||
 |**Description Attribute**|The description attribute of the tree record, currently only used to aid searching|||
 |**Extra Title Details Attribute**|The attribute of the tree entity that will add extra details to the display text of the node in the tree |||
-|**Is Checkable Attribute**|The checkable attribute of the tree entity, determines whether a node can be checked in the tree  |||
 |**Max Name Display Length (Work in Progress)**|The max amount of characters the text of the node will be displayed in the tree |||
 
 ## Versioning

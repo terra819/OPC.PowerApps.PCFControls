@@ -5,7 +5,7 @@
     <UniqueName>opc_OPCPowerAppsPCFControls</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="OPC PowerApps PCF Controls" languagecode="1033" />
+      <LocalizedName description="Custom KA Categories TreeComponent PCF Control" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0.0</Version>

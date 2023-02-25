@@ -170,14 +170,6 @@
     <value>La longueur maximale du nom que vous verrez dans la liste déroulante de l'arbre</value>
     <comment>Texte de description pour l'attribut détails extra pour titre de l'arbre</comment>
   </data>
-  <data name="isCheckableAttribute_Display_Key" xml:space="preserve">
-    <value>Attribut est coché de l'arbre</value>
-    <comment>Texte d'affichage pour le l'attribut est coché de l'arbre</comment>
-  </data>
-  <data name="isCheckableAttribute_Desc_Key" xml:space="preserve">
-    <value>Le nom logique de l'attribut est coché de l'arbre</value>
-    <comment>Texte de description pour l'attribut est coché de l'arbre</comment>
-  </data>
   <data name="maxNameDisplayLength_Display_Key" xml:space="preserve">
     <value>Longueur maximale d'affichage du nom</value>
     <comment>Texte d'affichage pour la Longueur maximale d'affichage du nom</comment>

@@ -20,7 +20,6 @@ export abstract class TreeBaseComponent<TInputs, TOutputs> implements ComponentF
     public descriptionAttribute: string;
     public extraTitleDetailsAttribute: string;
     public maxNameDisplayLength: number;
-    public isCheckableAttribute: string;
 
     public selectedItems?: string[] = [];
 
@@ -100,9 +99,6 @@ export abstract class TreeBaseComponent<TInputs, TOutputs> implements ComponentF
         }
         if (this.extraTitleDetailsAttribute) {
             fetchTreeEntityRecordsSelect += `,${this.extraTitleDetailsAttribute}`;
-        }
-        if (this.isCheckableAttribute) {
-            fetchTreeEntityRecordsSelect += `,${this.isCheckableAttribute}`;
         }
         fetchTreeEntityRecordsRequest = this.webAPI.fetchRecords(this.treeEntityCollectionName, fetchTreeEntityRecordsSelect);
 
@@ -189,7 +185,7 @@ export abstract class TreeBaseComponent<TInputs, TOutputs> implements ComponentF
                     newNode.name = entity[this.nameAttribute];
                     newNode.titleDetails = entity[this.extraTitleDetailsAttribute];
 
-                    newNode.checkable = newNode.level > 2 && this.isCheckableAttribute ? entity[this.isCheckableAttribute] : true;
+                    newNode.checkable = newNode.level > 2;
 
                     if (newNode.titleDetails) {
                         newNode.title = (
